@@ -1,0 +1,16 @@
+{
+  "name": "gem-backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start:dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "morgan": "^1.10.0"
+  }
+}

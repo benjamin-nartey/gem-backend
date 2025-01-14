@@ -1,0 +1,27 @@
+[
+  {
+    "id": 0,
+    "name": "Joyce Blessing",
+    "phone": "0247450384",
+    "email": "joyce@gmail.com",
+    "residence": "Akuafo Hall",
+    "sex": "female",
+    "wouldYouBeMember": "yes",
+    "givenLifeToChrist": "yes",
+    "dateConverted": "27/04/2000",
+    "placeOfConvertion": "Sunyani",
+    "recordOfficer": "Juanita",
+    "churchBranch": "Hatso",
+    "invitee": "Gilda",
+    "inviteePhone": "0555002440",
+    "firstTimer": "yes",
+    "purposeOfVisit": "to worship",
+    "maritalStatus": "single",
+    "serviceExperience": "Awesome",
+    "prayerRequest": "Financial breakthrough",
+    "WantVisit": "yes",
+    "day": "Friday",
+    "time": "2:33"
+  },
+  { "id": 1, "name": "Gloria", "phone": "0200000000" }
+]
