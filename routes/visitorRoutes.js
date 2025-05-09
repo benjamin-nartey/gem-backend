@@ -1,6 +1,6 @@
 const express = require("express");
 
-const { protect } = require("../controllers/authController");
+const { protect, restrictTo } = require("../controllers/authController");
 
 const {
   getAllVisitors,
@@ -20,6 +20,10 @@ router.route("/visitor-monthly-stat/:year").get(getVisitorsByMonth);
 
 router.route("/").get(protect, getAllVisitors).post(createVisitor);
 
-router.route("/:id").get(getVisitor).patch(updateVisitor).delete(deleteVisitor);
+router
+  .route("/:id")
+  .get(getVisitor)
+  .patch(updateVisitor)
+  .delete(protect, restrictTo("admin"), deleteVisitor);
 
 module.exports = router;

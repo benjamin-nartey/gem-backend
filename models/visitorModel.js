@@ -33,7 +33,7 @@ const visitorSchema = new mongoose.Schema({
     type: {
       status: {
         type: String,
-        required: [true, "Salvation status is required"],
+        required: [true, "Born again status is required"],
         enum: {
           values: ["yes", "no"],
           message: "givenLifeToChrist status can either be yes or no",
@@ -54,6 +54,8 @@ const visitorSchema = new mongoose.Schema({
   churchBranch: {
     type: String,
     required: [true, "Name of church branch is required"],
+    enum: { values: ["hatso"] },
+    message: "Church branch by default is set to the branch of record officer",
   },
   inviter: {
     type: String,
@@ -82,7 +84,7 @@ const visitorSchema = new mongoose.Schema({
     type: String,
     required: [true, "serviceExperiece field is required"],
     enum: {
-      values: ["poor", "normal", "good", "better"],
+      values: ["poor", "good", "better", "best"],
       message:
         "serviceExperience field can either be poor, normal, good, or better",
     },
@@ -98,7 +100,7 @@ const visitorSchema = new mongoose.Schema({
           message: "wantUsToVisit status can either be yes or no",
         },
       },
-      day: String,
+      date: Date,
       time: String,
     },
   },
